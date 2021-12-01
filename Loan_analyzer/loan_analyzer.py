@@ -1,4 +1,3 @@
-# coding: utf-8
 import csv
 from pathlib import Path
 
@@ -61,7 +60,8 @@ new_loan = {
     "future_value": 1000,
 }
 
-# Defined a new function to calculate present value using previous formula and given parameters
+# Defined a new function to calculate a present value using previous formula and given parameters
+# "present_value" is not returned as it would be shadowing a globally scoped variable and I don't want mild-warnings
 
 
 def calculate_present_value(a_future_value, a_annual_discount_rate, a_remaining_months):
